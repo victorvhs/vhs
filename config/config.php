@@ -60,4 +60,9 @@ $config['author'] = 'Victor Reis';
 $config['github'] = 'https://github.com/victorvhs';
 $config['email'] = 'vhreis@vhreis.net' ;
 $config['twitter'] = '@username';
+$config['contact'] = array(
+	'post' => $_POST,
+	'send_to' => 'vitor@vhreis.net',
+	'captcha' => false,
+);
 // $config['custom_setting'] = 'Hello';         // Can be accessed by {{ config.custom_setting }} in a theme
