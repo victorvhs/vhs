@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.twig" %}
+<body>
+
+    <!-- Navigation -->
+{% include "menu.twig" %}
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: {% if meta.img %} url({{ meta.img }}) {% else %} url('{{ theme_url }}/img/post-bg.jpg'){% endif %};">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>{{ meta.title }}</h1>
+                        <h2 class="subheading">{{ meta.description }}</h2>
+                        <span class="meta">Posted by <a href="{{ meta.profile }}">{{ meta.author }}</a> on {{ meta.date }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					{{ content }}
+
+          <form class="form-horizontal col-sm-8" action="email.php" method="post">
+
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" name="nome" value="" id="name" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" value="" id="email" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="msg">Mensagem</label>
+              <textarea class="form-control" rows="3" id="msg"></textarea>
+            </div>
+
+            <div class="col-sm-offset-8">
+              <button type="submit" name="button" class="btn btn-default btn-xs">Enviar</button>
+
+            </div>
+          </form>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    {% include "footer.twig" %}
+
+</body>
+
+</html>
