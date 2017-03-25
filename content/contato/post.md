@@ -1,5 +1,5 @@
 ---
-Title: Man must explore, and this is exploration at its greatest
+Title: Man 
 Description: Problems look mighty small from 150 miles up
 Date: 11 June 2016
 Author: Mohamed Safouan Besrour
