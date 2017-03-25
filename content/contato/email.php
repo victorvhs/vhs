@@ -1,5 +1,5 @@
 <?php
-echo 'D<script type="text/javascript">
+echo '<script type="text/javascript">
   alert("deu certo");
 </script>
 ';
