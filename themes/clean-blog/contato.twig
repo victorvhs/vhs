@@ -28,7 +28,34 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 					{{ content }}
 
-          
+
+          <form class="form-horizontal col-sm-8" role="email" action="content/contato/email.php" method="post">
+
+            <div class="form-group">
+              <label for="name">Nome:</label>
+              <input type="text" name="name" value="" id="name" class="form-control" placeholder="Seu nome" required="true">
+            </div>
+
+            <div class="form-group" name="contact">
+              <label for="assunto">Assunto:</label>
+              <input type="text" name="assunto" value="" id="assunto" class="form-control" placeholder="Sobre o que vamos falar?" required="true">
+            </div>
+
+            <div class="form-group">
+              <label for="email_remet">E-mail:</label>
+              <input type="text" name="email_remet" value="" id="email_remet" class="form-control" placeholder="Seu email" required="true">
+            </div>
+
+            <div class="form-group">
+              <label for="msg">Mensagem:</label>
+              <textarea class="form-control" rows="3" name="msg" id="msg" placeholder="Escreva seu recado aqui" ></textarea>
+            </div>
+
+            <div class="form-group col-sm-offset-8">
+              <button type="submit" class="btn btn-default btn-xs" name="email">Enviar</button>
+
+            </div>
+          </form>
                 </div>
             </div>
         </div>

@@ -27,7 +27,8 @@
         "twig/twig": "^1.18",
         "erusev/parsedown-extra": "^0.7",
         "symfony/yaml" : "^2.3",
-        "phpmailer/phpmailer": "^5.2"
+        "zendframework/zend-mail": "^2.7",
+        "zendframework/zend-captcha": "^2.7"
     },
     "require-dev" : {
         "phpdocumentor/phpdocumentor": "^2.8",

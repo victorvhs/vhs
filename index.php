@@ -7,7 +7,7 @@ if (PHP_VERSION_ID < 50306) {
 
 // load dependencies
 require_once(__DIR__ . '/vendor/autoload.php');
-require(__DIR__.'/content/contato/email.php');
+
 
 // instance Pico
 $pico = new Pico(

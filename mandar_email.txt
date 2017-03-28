@@ -1,0 +1,21 @@
+/*
+Importar a zend_mail
+
+Verificar se o captcha foi validado.
+Se validado:
+  Pegar os valores do formulario
+  Configurar o servidor SMTP
+
+  Fazer set dos valores do formulario
+  Enviar Msg para o destino.
+  Enviar Msg de confirmação para o email do remetente.
+  Retornar para a pagina de contato.
+  Se msg enviado com sucesso:
+    Exibir nota avisando que a msg foi enviada.
+  Senão:
+    Exibir msg dizendo que a msg não pode ser enviada.
+Senão:
+  Exibir msg de erro
+  Retorar para a pagina de contato.
+
+*/
